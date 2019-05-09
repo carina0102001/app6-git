@@ -2,7 +2,7 @@
 
 <widget xmins ="https://www.w3.org/ns/widgets"
 xmins:gap= "http://phonegap.com/ns/1.0"
-id= "com.phonegap.app5"
+id= "com.phonegap.app6"
 version = "1.0.0">
 
 <name> appp6 Deslizar hacia la izquierda y a la derecha </name>
@@ -32,9 +32,16 @@ Carina Martínez Nieto
 
 <!-- <plugin name="cordova-plugin-geolocation" source="npm" /> -->
 
-<!-- Colocar icono app -->
-<icon src="res/android/mdpi2.png"/>
+<!-- Para accesar a paginas de internet-->
+<allow-intent href="https://*/*"/>
+<acces origin="https://*/*"/>
+<allow-intent href="http://*/*"/>
+<acces origin="http://*/*"/>
+<plugin name="cordova-plugin-whitelist" source="npm"/>
 
+<!-- Colocar icono app -->
+
+<icon src="res/android/mdpi2.png"/>
  </widget>
 
 
